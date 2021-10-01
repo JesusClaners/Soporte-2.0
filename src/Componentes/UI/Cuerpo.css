@@ -1,0 +1,15 @@
+.cuerpo {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap !important;
+    justify-content: center !important; 
+    align-items: center;
+    align-content: center;
+    flex: auto;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25) !important;
+    background-color: #141828 !important;
+    margin: 0 !important;
+    border: 0;
+    width:100%;
+  }
+  

@@ -1,0 +1,24 @@
+
+.boton{
+    background-color: #348632 !important;
+    border: 1px solid black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton:hover{
+    background-color: #4BCB4A !important;
+    border: 1px solid black !important;
+}
+
+
+.boton__texto{
+    text-transform: uppercase;
+    font-size: 1.2rem !important;
+    padding: 0.3rem 1rem;
+    font-family: "Roboto", Arial, sans-serif !important;
+    font-weight: normal !important;
+    color: rgb(255, 255, 255);
+    display: block;
+}
