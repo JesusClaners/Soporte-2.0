@@ -1,27 +1,27 @@
-import Main from "./Componentes/Paginas/Main"
-import NavClan from "./Componentes/UI/NavegacionClaners"
-import { Route, Switch, Redirect } from 'react-router-dom';
-import Cuerpo from "./Componentes/UI/Cuerpo";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Xbox from "./Componentes/Paginas/Xbox";
+import Soporte from "./Componentes/Paginas/Soporte";
+import FormularioSoporte from "./Componentes/Paginas/FormularioSoporte";
 
 function App() {
   return (
-    <div>
-       <Cuerpo>
+
       <Switch>
-        <Route path='/' exact>
-          <Redirect to='/Main' />
+        <Route path="/" exact>
+          <Redirect to="/Soporte" />
         </Route>
-        <Route path ='/Xbox' exact>
+
+        <Route path="/Soporte">
+          <Soporte />
+        </Route>
+        <Route path="/Xbox" exact>
           <Xbox />
         </Route>
+        <Route path="/Xbox/Formulario">
+          <FormularioSoporte />
+        </Route>
       </Switch>
-    </Cuerpo>
-
-      
-      <NavClan/>
-      <Main/>
-    </div>
+    
   );
 }
 

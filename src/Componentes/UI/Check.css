@@ -1,0 +1,14 @@
+.check__label {
+    font-weight: bold;
+    display: flex;
+    color: white;
+    margin-bottom: 5px;
+  }
+
+.check__error  {
+    color: red;
+    font-size: 12px;
+    width: 400px;
+    margin-top: 0.25rem;
+  }
+  
