@@ -1,8 +1,7 @@
-import ReactMarkdown from 'react-markdown'
 
 const FAQGeneral =()=>{
     return(
-    <ReactMarkdown>
+    <p>
         # Preguntas mas frecuentes
 
     ### ¿Cómo compro en Claners.com? 
@@ -41,7 +40,7 @@ Al seleccionar tu método de pago te llevara a la página donde podrás finaliza
 
 Damos Clancoins en la compra de productos específicos y se pueden usar para comprar en claners.com
 
-    </ReactMarkdown>
+    </p>
 )
 }
 

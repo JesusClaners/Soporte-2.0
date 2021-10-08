@@ -1,7 +1,7 @@
 import React from 'react'
 import { useField } from "formik";
 
-import './CampoTexto.css'
+import '../Styles/root.css'
 
 
 const CampoTexto = ({ label, ...props }) => {
@@ -9,10 +9,10 @@ const CampoTexto = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
     <>
-      <label className="campo__etiqueta" htmlFor={props.id || props.name}>{label}</label>
-      <input className="campo__input" {...field} {...props} />
+      <label  htmlFor={props.id || props.name}>{label}</label>
+      <input  {...field} {...props} />
       {meta.touched && meta.error ? (
-        <div className="campo__error">{meta.error}</div>
+        <div className="error">{meta.error}</div>
       ) : null}
     </>
   );

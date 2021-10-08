@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import Tarjeta from "./Tarjeta";
 import CampoTexto from "./CampoTexto";
 import Check from "./Check"
-import "./Formulario.css"
+
 
 const Formulario =(props)=>{
     

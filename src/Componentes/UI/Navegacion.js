@@ -14,11 +14,11 @@ const Navegacion = () => {
            <NavLink to="/Xbox">Xbox</NavLink>
           </button>
 
-          <button>Ps4</button>
+          <button disabled>Ps4</button>
 
-          <button>PC</button>
+          <button disabled>PC</button>
 
-          <button>Garena</button>
+          <button disabled>Garena</button>
         </Stack>
       </Tarjeta>
 

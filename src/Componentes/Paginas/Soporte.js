@@ -1,28 +1,41 @@
+import React from "react";
 import Acordeon from "../UI/Acordeon";
-import Cuerpo from "../UI/Cuerpo";
 import Navegacion from "../UI/Navegacion";
-import { Typography } from "@mui/material";
-import "./Main.css";
+import "../Styles/root.css";
 import Tarjeta from "../UI/Tarjeta";
 import Banner from "../UI/Banner";
-import FAQGeneral from "../UI/FAQ_General";
+import { Paper } from "@mui/material";
 
 const Soporte = () => {
+ 
+
+
   return (
-    <Cuerpo>
-      <Banner />
-      <Typography className="main__texto"> Como podemos ayudarte?</Typography>
+    <>
+    <Banner />
+    <Paper elevation={24}>
+      
+      <h1> Como podemos ayudarte?</h1>
       <Navegacion />
       <Acordeon>
-        <FAQGeneral/>
+        <p> 
+    
+        Este es solo un texto de prueba <br/>
+        aqui deben de aparecer las preguntas<br/>
+        una vez termine el archivo JSON
+
+        </p>
       </Acordeon>
-      <Typography className="main__h2">¿Eres creador de contenido?</Typography>
-      <Typography className="main__h2">¡Unete Claners Creators!</Typography>
+      <h2>¿Eres creador de contenido?</h2>
+      <h2>¡Unete Claners Creators!</h2>
       <Tarjeta>
-        <button>Enviar solicitud</button>
+        <button disabled>Enviar solicitud</button>
       </Tarjeta>
-    </Cuerpo>
+      </Paper>
+    </>
   );
+
+  
 };
 
 export default Soporte;

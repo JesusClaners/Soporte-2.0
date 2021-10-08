@@ -1,5 +1,5 @@
 import Card  from "@mui/material/Card";
-import "./Tarjeta.css"
+import "../Styles/root.css"
 
 const Tarjeta = (props) => {
     
