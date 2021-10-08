@@ -3,40 +3,36 @@ import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import Tarjeta from "./Tarjeta";
 import CampoTexto from "./CampoTexto";
-import Check from "./Check"
+import Check from "./Check";
 
-
-const Formulario =(props)=>{
-    
-    return(
+const Formulario = (props) => {
+  return (
     <Tarjeta>
-        
-        <Formik
+      <Formik
         initialValues={{
           nombre: "",
           orden: "",
           email: "",
-          problema:"",
-          terminosAceptados: false
+          problema: "",
+          terminosAceptados: false,
         }}
         validationSchema={Yup.object({
           nombre: Yup.string()
             .max(30, "Debe de ser menos de 30 caracteres")
             .required("Campo Requerido"),
-          orden: Yup.number()
-            .required("Campo Requerido"),
+          orden: Yup.number().required("Campo Requerido"),
           email: Yup.string()
             .email("Correo electronico invalido o incorrecto`")
             .required("Campo Requerido"),
           terminosAceptados: Yup.boolean()
             .required("Campo Requerido")
-            .oneOf([true], "Debes aceptar los terminos y condiciones.")
+            .oneOf([true], "Debes aceptar los terminos y condiciones."),
         })}
         onSubmit={async (values, { setSubmitting }) => {
-          console.log(values)
+          console.log(values);
         }}
       >
-        <Form className="formulario" >
+        <Form className="formulario">
           <CampoTexto
             label="Nombre"
             name="nombre"
@@ -55,17 +51,18 @@ const Formulario =(props)=>{
             type="email"
             placeholder="cliente@claners.com"
           />
-          
+
           <Check name="terminosAceptados">
             Acepto los terminos y condiciones
           </Check>
 
-          <button className="formulario__boton" type="submit">Ingresar datos</button>
+          <button className="formulario__boton" type="submit">
+            Ingresar datos
+          </button>
         </Form>
       </Formik>
-        
     </Tarjeta>
-    );
-}
+  );
+};
 
-export default Formulario
+export default Formulario;

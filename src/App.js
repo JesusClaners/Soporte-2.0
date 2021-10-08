@@ -5,8 +5,7 @@ import FormularioSoporte from "./Componentes/Paginas/FormularioSoporte";
 
 function App() {
   return (
-      <body>
-        
+    <body>
       <Switch>
         <Route path="/" exact>
           <Redirect to="/Soporte" />
@@ -22,7 +21,7 @@ function App() {
           <FormularioSoporte />
         </Route>
       </Switch>
-      </body>
+    </body>
   );
 }
 

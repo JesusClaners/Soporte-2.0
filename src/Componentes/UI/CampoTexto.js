@@ -1,16 +1,14 @@
-import React from 'react'
+import React from "react";
 import { useField } from "formik";
 
-import '../Styles/root.css'
-
+import "../Styles/root.css";
 
 const CampoTexto = ({ label, ...props }) => {
-  
   const [field, meta] = useField(props);
   return (
     <>
-      <label  htmlFor={props.id || props.name}>{label}</label>
-      <input  {...field} {...props} />
+      <label htmlFor={props.id || props.name}>{label}</label>
+      <input {...field} {...props} />
       {meta.touched && meta.error ? (
         <div className="error">{meta.error}</div>
       ) : null}
@@ -18,4 +16,4 @@ const CampoTexto = ({ label, ...props }) => {
   );
 };
 
-export default CampoTexto
+export default CampoTexto;

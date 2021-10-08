@@ -1,17 +1,16 @@
 :root {
   --primary-color: #141828;
-  --secondary-color:#333333 ;
+  --secondary-color: #333333;
   --button-color: #348632;
   --button-hover-color: #4bcb4a;
-  --button-disabled:#636363;
+  --button-disabled: #636363;
   --nav-bg: rgb(37, 37, 37);
   --shadow: 0 5px 24px rgba(0, 0, 0, 0.25);
   --font: "Roboto", Arial, sans-serif;
   --font-color: #ffffff;
   --font-hover: #183f5f;
-  font-size: 100%;
-  --bg-card:rgb(31, 31, 31);
-  --border: .5px solid black;
+  --bg-card: rgb(31, 31, 31);
+  --border: 0.5px solid black;
 }
 
 body {
@@ -31,11 +30,10 @@ body {
   height: 100%;
 }
 
-
-
-a:link, a:visited {
+a:link,
+a:visited {
   font-family: var(--font);
-  font-size: 1.2rem;
+  font-size: 2.3vw;
   color: var(--font-color);
   text-align: center;
   text-decoration: none;
@@ -47,152 +45,137 @@ a:hover {
 }
 
 header {
-  width: 100% ;
-  height: 100%;
   position: relative;
+  width: 100%;
+  background-size: contain;
 }
 
-img{
+img {
   width: 100%;
   height: 50%;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex: auto;
-  box-shadow: var(--shadow);
-  background-color: var(--nav-bg) !important;
-  margin: 2rem auto;
-  width: 100%;
-  padding: 1rem;
-}
-
 button {
   background-color: var(--button-color);
-  border: 1px solid black;
+  border: var(--border);
   border-radius: 0.3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.8rem 1.4rem;
+  padding: 0.6rem 1rem;
+  align-self: center;
   text-transform: uppercase;
   text-shadow: var(--shadow);
-  font-size: 1.2rem;
+  font-size: 2.3vw;
   font-family: var(--font);
   font-weight: normal;
   color: var(--font-color);
-  width: 100%;
-  height: 100%;
+  width: fit-content;
 }
 
 button:hover {
   background-color: var(--button-hover-color);
-  border: 1px solid black ;
 }
 
-button:disabled{
+button:disabled {
   background-color: var(--button-disabled);
   opacity: 20%;
 }
 
 p {
-  display: block;
-  color:var(--font-color);
-  font-size: 1rem;
+  color: var(--font-color);
+  font-size: 2.2vw;
   font-family: var(--font);
   text-shadow: var(--shadow);
 }
 
-h1{
-    font-size: 2rem ;
-    padding: .3rem 2rem ;
-    text-transform: uppercase ;
-    font-family: var(--font) ;
-    font-weight: normal ; 
-    color: var(--font-color) ;
-    text-align: center ;
-    text-shadow: var(--shadow);
+h1 {
+  font-size: 4.5vw;
+  text-transform: uppercase;
+  font-family: var(--font);
+  color: var(--font-color);
+  font-weight: normal;
+  text-align: center;
+  text-shadow: var(--shadow);
 }
 
-h2{
-    font-size: 1.5rem ;
-    padding: .3rem 2rem ;
-    text-transform: uppercase ;
-    font-family: var(--font) ;
-    font-weight: normal ; 
-    color: var(--font-color) ;
-    text-align: center ;
-    text-shadow: var(--shadow);
+h2 {
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-weight: normal;
+  color: var(--font-color);
+  text-align: center;
+  text-shadow: var(--shadow);
 }
 
-
-label{
-    font-weight: bold;
-    display: flex;
-    color: white;
-    margin-bottom: 5px;
+h3 {
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-weight: normal;
+  color: var(--font-color);
+  text-align: center;
+  text-shadow: var(--shadow);
 }
 
-input[type='text'],
-input[type='email'],
+label {
+  font-weight: bold;
+  display: flex;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 3vw;
+}
+
+input[type="text"],
+input[type="email"],
 textarea {
   display: block;
-  width: 400px;
-  padding: 6px 12px;
-  font-size: 14px;
+  padding: 0.5rem 2rem;
+  font-size: 3vw;
   line-height: 1.42857143;
   color: #555;
   background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
+  border: 0;
   border-radius: 4px;
+  align-items: center;
 }
 
-.error{
+.error {
   color: red;
-  font-size: 12px;
-  width: 400px;
+  font-size: 2vw;
   margin-top: 0.25rem;
 }
 
-.MuiCard-root{
-  display: flex;
-  flex-direction: row;
+.MuiCard-root {
   position: relative !important;
-  flex-wrap: nowrap !important;
-  justify-content: center !important; 
-  align-items: center;
-  align-content: center;
-  flex : auto;
+  align-content: center !important;
   box-shadow: var(--shadow) !important;
-  background-color: var(--bg-card) !important;
-  margin: 2rem auto !important;
+  margin: 1rem 0.5rem !important;
   width: fit-content !important;
-  padding: 1rem !important;
-  border: var(--border);
+  padding: 0.6rem !important;
+  border: var(--border) !important;
 }
 
-.MuiPaper-root{
-  width: 75%;
+.MuiPaper-root {
+  width: 85%;
+  height: 100%;
   align-content: center;
   background-color: var(--secondary-color) !important;
-  border: var(--border)
+  border: var(--border);
+  display: flex !important;
+  flex-direction: column;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex: auto;
 }
 
-.MuiAccordion-root{
+.MuiAccordion-root {
   margin: auto !important;
-  display: flex ;
+  display: flex;
   justify-content: center !important;
   align-items: center !important;
   flex-wrap: wrap !important;
   width: 60%;
   height: 100%;
   box-shadow: var(--shadow) !important;
-  border: .5px solid black !important;
+  border: 0.5px solid black !important;
 }

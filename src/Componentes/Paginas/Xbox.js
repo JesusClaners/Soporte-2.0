@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Tarjeta from "../UI/Tarjeta";
 import Acordeon from "../UI/Acordeon";
 import BannerXbox from "../UI/Banner-Xbox";
-import FAQGeneral from "../UI/FAQGeneral";
 import { Stack } from "@mui/material";
 import { Paper } from "@mui/material";
 
@@ -14,13 +13,12 @@ const Xbox = () => {
         <h1> Soporte para Xbox</h1>
 
         <Acordeon>
-        <p> 
-    
-    Este es solo un texto de prueba <br/>
-    aqui deben de aparecer las preguntas<br/>
-    una vez termine el archivo JSON
-
-    </p>
+          <p>
+            Este es solo un texto de prueba <br />
+            aqui deben de aparecer las preguntas
+            <br />
+            una vez termine el archivo JSON
+          </p>
         </Acordeon>
 
         <Tarjeta>

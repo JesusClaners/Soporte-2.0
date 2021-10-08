@@ -1,16 +1,11 @@
+import "../Styles/root.css";
 
-import "../Styles/root.css"
+const BannerXbox = () => {
+  return (
+    <header>
+      <img src={"/BannerXbox.jpg"} alt="Banner Xbox" />
+    </header>
+  );
+};
 
-const BannerXbox =()=>{
-
-    
-    return(
-       <header>
-        <img src={"/BannerXbox.jpg"} alt="Banner Xbox"/>
-        </header>
-
-       
-    );
-}
-
-export default BannerXbox
+export default BannerXbox;
