@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #141828;
+  --button-color: #348632;
+  --nav-bg: rgb(37, 37, 37);
+  --shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  --font: "Roboto", Arial, sans-serif;
+  --font-color: #ffffff;
+  --font-hover: #57b3ff;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font) !important;
+  font-size: 1.2rem !important;
+  color: var(--font-color) !important;
+  line-height: 20px;
+  background-color: var(--primary-color);
+}
+
+a {
+  font-family: var(--font);
+  font-size: 1.2rem;
+  color: var(--font-color);
+}
+
+a:hover {
+  color: var(--font-hover);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 100%;
+  height: 50%;
+  position: relative;
+  
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex: auto;
+  box-shadow: var(--shadow);
+  background-color: var(--nav-bg) !important;
+  margin: 2rem auto;
+  width: 100%;
+  padding: 1rem;
+}
+
+button {
+  background-color: var(--button-color);
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.4rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: var(--font);
+  font-weight: normal;
+  color: var(--font-color);
+}
+
+button:hover {
+  background-color: #4bcb4a !important;
+  border: 1px solid black !important;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

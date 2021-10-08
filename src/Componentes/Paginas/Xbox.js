@@ -1,4 +1,3 @@
-import Boton from "../UI/BotonSimple";
 import Cuerpo from "../UI/Cuerpo";
 import { Link } from "react-router-dom";
 
@@ -7,12 +6,12 @@ const Xbox = () => {
   return (
     <Cuerpo>
       <h2>Pagina de soporte Xbox</h2>
-      <Boton>
+      <button>
       <Link to='/'>Volver</Link>
-      </Boton>
-      <Boton>
+      </button>
+      <button>
         <Link to='/Xbox/Formulario'>Soporte</Link>
-      </Boton>
+      </button>
     </Cuerpo>
   );
 };

@@ -1,8 +1,7 @@
 import Stack from "@mui/material/Stack";
-import Boton from "./BotonSimple";
 import Tarjeta from "./Tarjeta";
 import { NavLink } from "react-router-dom";
-
+import "../Styles/root.css"
 
 
 
@@ -11,15 +10,15 @@ const Navegacion = () => {
     
       <Tarjeta>
         <Stack direction="row" spacing={2} justifyContent="center">
-          <Boton>
+          <button>
            <NavLink to="/Xbox">Xbox</NavLink>
-          </Boton>
+          </button>
 
-          <Boton>Ps4</Boton>
+          <button>Ps4</button>
 
-          <Boton>PC</Boton>
+          <button>PC</button>
 
-          <Boton>Garena</Boton>
+          <button>Garena</button>
         </Stack>
       </Tarjeta>
 

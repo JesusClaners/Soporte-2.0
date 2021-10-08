@@ -1,7 +1,7 @@
-import "./Cuerpo.css";
+import "../Styles/root.css";
 
 const Cuerpo = (props) => {
-  return <div className="cuerpo">{props.children}</div>;
+  return <body>{props.children}</body>;
 };
 
 export default Cuerpo;

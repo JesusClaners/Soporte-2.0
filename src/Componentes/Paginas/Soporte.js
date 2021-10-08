@@ -3,7 +3,6 @@ import Cuerpo from "../UI/Cuerpo";
 import Navegacion from "../UI/Navegacion";
 import { Typography } from "@mui/material";
 import "./Main.css";
-import Boton from "../UI/BotonSimple";
 import Tarjeta from "../UI/Tarjeta";
 import Banner from "../UI/Banner";
 import FAQGeneral from "../UI/FAQ_General";
@@ -20,7 +19,7 @@ const Soporte = () => {
       <Typography className="main__h2">¿Eres creador de contenido?</Typography>
       <Typography className="main__h2">¡Unete Claners Creators!</Typography>
       <Tarjeta>
-        <Boton>Enviar solicitud</Boton>
+        <button>Enviar solicitud</button>
       </Tarjeta>
     </Cuerpo>
   );
