@@ -45,9 +45,12 @@ a:hover {
 }
 
 header {
-  position: relative;
-  width: 100%;
-  background-size: contain;
+    background-size: cover;
+    background-position: center center;
+    width: calc(100vw - 17px);
+    margin-left: calc(50% - 50vw + 8.5px);
+    margin-right: calc(50% - 50vw + 8.5px);
+    height: 50%;
 }
 
 img {
