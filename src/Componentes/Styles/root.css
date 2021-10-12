@@ -10,7 +10,7 @@
   --font-color: #ffffff;
   --font-hover: #183f5f;
   --bg-card: rgb(31, 31, 31);
-  --border: 0.5px solid black;
+  --hoverborder: 2px solid #226ddd;
 }
 
 body {
@@ -33,11 +33,13 @@ body {
 a:link,
 a:visited {
   font-family: var(--font);
-  font-size: 2.3vw;
+  font-size: 1.5rem;
   color: var(--font-color);
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  width: 100%;
+  margin-bottom: calc(100% - 20vw - 220px);
 }
 
 a:hover {
@@ -60,21 +62,22 @@ img {
 
 button {
   background-color: var(--button-color);
-  border: var(--border);
+  border: none;
   border-radius: 0.3rem;
   padding: 0.6rem 1rem;
-  align-self: center;
   text-transform: uppercase;
   text-shadow: var(--shadow);
-  font-size: 2.3vw;
+  font-size: 2rem;
   font-family: var(--font);
   font-weight: normal;
   color: var(--font-color);
   width: fit-content;
+  
 }
 
 button:hover {
   background-color: var(--button-hover-color);
+  border: var(--hoverborder);
 }
 
 button:disabled {
@@ -84,13 +87,13 @@ button:disabled {
 
 p {
   color: var(--font-color);
-  font-size: 2.2vw;
+  font-size: 1vw;
   font-family: var(--font);
   text-shadow: var(--shadow);
 }
 
 h1 {
-  font-size: 4.5vw;
+  font-size: 3rem;
   text-transform: uppercase;
   font-family: var(--font);
   color: var(--font-color);
@@ -100,7 +103,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: 2rem;
   text-transform: uppercase;
   font-family: var(--font);
   font-weight: normal;
@@ -110,7 +113,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5vw;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-family: var(--font);
   font-weight: normal;
@@ -160,9 +163,9 @@ textarea {
 .MuiPaper-root {
   width: 85%;
   height: 100%;
-  align-content: center;
   background-color: var(--secondary-color) !important;
-  border: var(--border);
+  border: none;
+  border-radius: 0 !important;
   display: flex !important;
   flex-direction: column;
   flex-wrap: wrap !important;
@@ -177,8 +180,7 @@ textarea {
   justify-content: center !important;
   align-items: center !important;
   flex-wrap: wrap !important;
-  width: 60%;
-  height: 100%;
+  width: fit-content;
   box-shadow: var(--shadow) !important;
-  border: 0.5px solid black !important;
+  border: none;
 }

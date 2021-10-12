@@ -8,16 +8,17 @@ const Navegacion = () => {
     <Tarjeta>
       <Stack direction="row" spacing={1}>
         <button>
-          <NavLink to="/Xbox">Xbox</NavLink>
+         
+          <NavLink to="/Xbox"> <img src={"/xboxButton.png"} alt="Xbox"/>Xbox</NavLink>
         </button>
 
         <button>
-        <NavLink to="/Playstation">Ps4</NavLink>
+        <NavLink to="/Playstation"> <img src={"/psButton.png"} alt="Ps4"/>Ps4</NavLink>
         </button>
 
-        <button><NavLink to="/PC">PC</NavLink></button>
+        <button><NavLink to="/PC"><img src={"/pcButton.png"} alt="PC"/> PC</NavLink></button>
 
-        <button><NavLink to="/Garena">Garena</NavLink></button>
+        <button><NavLink to="/Garena"><img src={"/garenaButton.png"} alt="Garena"/>Garena</NavLink></button>
       </Stack>
     </Tarjeta>
   );
